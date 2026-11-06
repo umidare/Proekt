@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple nature website made with HTML, CSS and JavaScript.">
+  <title>Green World | Explore Nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">🌿 Green World</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">BREATHE • EXPLORE • PROTECT</p>
+        <h1>Discover the beauty of nature</h1>
+        <p>From quiet forests to flowing rivers, our planet is full of places worth protecting.</p>
+        <a class="button" href="#gallery">Explore the gallery</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div>
+        <p class="eyebrow">OUR PLANET, OUR HOME</p>
+        <h2>Small moments. Big wonders.</h2>
+        <p>Nature gives us clean air, fresh water, food and inspiration. Spending time outdoors can help us slow down, notice the world around us and remember why it matters to care for the environment.</p>
+        <p>Even simple actions—saving water, planting a tree and keeping public places clean—can make a difference.</p>
+      </div>
+      <img src="assets/river.jpg" alt="Green landscape with a winding river">
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <p class="eyebrow">A LITTLE INSPIRATION</p>
+      <h2>Nature gallery</h2>
+      <p class="section-intro">Take a look at a few peaceful landscapes.</p>
+      <div class="gallery">
+        <figure><img src="assets/forest.jpg" alt="Green forest landscape"><figcaption>Forest escape</figcaption></figure>
+        <figure><img src="assets/mountains.jpg" alt="Mountain landscape"><figcaption>Mountain air</figcaption></figure>
+        <figure><img src="assets/river.jpg" alt="River through a green landscape"><figcaption>Flowing waters</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <p class="eyebrow">PAUSE AND ENJOY</p>
+      <h2>A moment in nature</h2>
+      <p class="section-intro">A short, locally stored nature animation made for this demo project.</p>
+      <video controls muted loop playsinline poster="assets/forest.jpg">
+        <source src="assets/nature-loop.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Send us a message</h2>
+        <p>Have an idea for protecting nature? Share it with us.</p>
+        <p class="contact-note">Demo form: it shows a confirmation in your browser. It does not send data to a server.</p>
+      </div>
+      <form id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Green World. Made for learning HTML, CSS and JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
